@@ -1,0 +1,325 @@
+body {
+    font-family: Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    height:100%
+
+
+}
+
+#header-container {
+    position: relative;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(20, 20, 20, 0.1);
+    justify-content: space-between;
+    text-align: center;
+    color: #fff;
+    
+}
+
+.top-container{
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the top */
+    padding: 0px;
+    max-width: 100%;
+}
+
+
+
+
+
+.text {
+	font-family: "Yanone Kaffeesatz";
+    font-size: 17px;
+	display: flex;
+    width: 10%;
+    color:#262627;
+    transform: translateX(-50%);
+    position: absolute;
+    left: 5%;
+    top:1.5%;
+	user-select: none;
+
+	.wrapper {
+		padding:2px;
+		.letter {
+			transition: ease-out 1s;
+			transform: translateY(40%);
+		}
+		.shadow {
+			transform: scale(1, -1);
+			color: #dad9d9;
+			transition: ease-in 5s, ease-out 5s;
+		}
+		&:hover {
+			.letter {
+				transform: translateY(-200%);
+			}
+			.shadow {
+				opacity: 0;
+				transform: translateY(200%);
+			}
+		}
+	}
+}
+
+.filter-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    
+    
+}
+
+
+.filter-button {
+    --s: 0.1em;   /* the thickness of the line */
+    --c: #7f7f89; /* the color */
+  
+  color: #0000;
+  border: none;
+  cursor: pointer;
+  font-family: "Yanone Kaffeesatz";
+  font-size: large;
+  padding-bottom: var(--s);
+  background: 
+    linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: 0.5s;
+}
+
+.filter-button:hover {
+    --_p: 100%
+}
+
+
+.header-image {
+    width: 100%;
+}
+
+
+
+h1{
+
+    font-size: 2em;
+    margin:0;
+    font-weight: 100; /* Adjust the font weight (slimmer) */
+    color:#fff;
+
+
+}
+
+.filter-container{
+    text-align: center;
+    margin:20px;
+
+
+}
+
+h2{
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 20px;
+    color: #555;
+}
+.about{
+    text-align: center;
+    margin-top: 50px;
+
+}
+.p1{
+    margin-top: 200px;
+    text-align: center;
+    font-family: Copperplate, "Papyrus";
+    font-size: 1.7em;
+    text-decoration: underline;
+    margin-bottom: 50px;
+    color:#1a1a1b;
+}
+
+#content{
+    max-width: 800px;
+    margin:0 auto;
+
+}
+
+
+
+.images {
+    position: relative;
+    text-align: left; /* Center-align content within each section */
+    max-width: 100%;
+}
+
+.slideshow {
+    display: inline-block; /* Display as inline-block to fit content */
+    position: relative;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    font-size: 40px;
+    color:#a7a7ab;
+    background: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 0;
+    transform: translate(-50%, -50%); /* Center horizontally */
+}
+
+.next {
+    right: 0;
+    transform: translate(50%, -50%); /* Center horizontally */
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(68, 68, 72, 0.8);
+    
+
+}
+
+#central{
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+/* Add these styles for the images */
+.grid-item {
+    display: none; /* Hide images by default */
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Display the first image initially */
+.grid-item:first-child {
+    display: block;
+}
+
+.about-near, .about-central{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+
+}
+
+.p2{
+    font-family: "Times New Roman", Times, serif;
+    font-size:0.8em;
+    margin:0;
+    margin-bottom: 30px;
+    color:#7f7f89
+
+    
+}
+
+
+
+.maps{
+    margin-bottom: 10px;
+    width:100%;
+    height:auto;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+h5{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.5em;
+    color:#676565;
+}
+
+.Amentities{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;   
+   
+}
+
+
+.bed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #b3986f;
+
+}
+
+.bed p{
+    margin:0;
+    margin-top: 5px;
+    font-family: "Times New Roman", Times, serif;
+
+}
+
+
+h6{
+    color:#676565;
+    text-align: center;
+    margin:0;
+    margin-top:50px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    
+}
+
+
+.contact-sec{
+    background-color: #7f7f89;
+    padding:50px;
+
+}
+.contact-sec h2{
+    text-align: left;
+    color:#1a1a1b;
+    
+}
+.contact-sec p{
+    font-family: "Times New Roman", Times, serif;
+    
+}
+
+.pett{
+    font-size:0.68em;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        max-width:100%;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+    .top-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%
+
+    }
+    .filter-container{
+        margin-top: 40px;
+        
+    }
+
+
+}
