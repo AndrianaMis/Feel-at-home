@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial,sans-serif;
     margin: 0;
@@ -31,7 +32,7 @@ body {
 
 .text {
 	font-family: "Yanone Kaffeesatz";
-    font-size: 17px;
+    font-size: 18px;
 	display: flex;
     width: 10%;
     color:#262627;
@@ -64,10 +65,24 @@ body {
 	}
 }
 
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .filter-container {
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
+    gap:10px;
+    opacity: 0; /* Start hidden */
+    animation: slideInFromRight 1.5s ease-out forwards; /* Adjust the duration as needed */
     
     
 }
@@ -80,7 +95,9 @@ body {
   color: #0000;
   border: none;
   cursor: pointer;
-  font-family: "Yanone Kaffeesatz";
+  /*font-family: "Yanone Kaffeesatz";*/
+  font-family: 'Varela Round', sans-serif;
+  /*font-weight: 600;*/
   font-size: large;
   padding-bottom: var(--s);
   background: 
@@ -88,16 +105,30 @@ body {
     linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
   -webkit-background-clip: text,padding-box;
           background-clip: text,padding-box;
-  transition: 0.5s;
+  transition: 1s;
+  margin: 0; /* Ensure no default margin */
+
 }
 
 .filter-button:hover {
     --_p: 100%
 }
 
+.direct{
+    color: #b31515; /* Adjust the color as needed */
+    font-family: 'Varela Round';
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 2; /* Ensure no extra spacing */
+    margin: 0;
+    text-decoration: underline;
+
+
+}
 
 .header-image {
     width: 100%;
+
 }
 
 
@@ -132,7 +163,7 @@ h2{
 .p1{
     margin-top: 200px;
     text-align: center;
-    font-family: Copperplate, "Papyrus";
+    font-family: "Times New Roman", Times, serif;
     font-size: 1.7em;
     text-decoration: underline;
     margin-bottom: 50px;
@@ -140,7 +171,7 @@ h2{
 }
 
 #content{
-    max-width: 800px;
+    max-width: 1000px;
     margin:0 auto;
 
 }
@@ -208,8 +239,16 @@ h2{
 }
 
 .about-near, .about-central{
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
     font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+    width: 100%; /* Ensure full width */
+    max-width: none; /* Remove any maximum width limitation */
+    margin: 0; /* Remove any margins */
+    padding: 0; /* Remove any padding */
+
 
 }
 
@@ -227,10 +266,12 @@ h2{
 
 .maps{
     margin-bottom: 10px;
-    width:100%;
+    margin-top: 10px;
+    /*width: 300px;*/
     height:auto;
     border-radius: 10px;
     cursor:pointer;
+
 }
 
 h5{
@@ -255,7 +296,7 @@ h5{
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #b3986f;
+    background-color: rgb(52, 155, 93);
 
 }
 
@@ -280,7 +321,7 @@ h6{
 
 
 .contact-sec{
-    background-color: #7f7f89;
+    background-color: #a4b0b1;
     padding:50px;
 
 }
@@ -293,9 +334,13 @@ h6{
     font-family: "Times New Roman", Times, serif;
     
 }
+.contact-sec p1{
+    color:#4d4d4b;
+    font-size: 12px;
 
+}
 .pett{
-    font-size:0.68em;
+    font-size:0.70em;
 }
 
 

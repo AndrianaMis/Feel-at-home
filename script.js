@@ -28,3 +28,8 @@ function scrolltosection(sectionid){
         section.scrollIntoView({ behavior: 'smooth' });
     }
 }
+
+
+window.addEventListener('load', function() {
+    document.querySelector('.filter-container').style.opacity = '1';
+});
