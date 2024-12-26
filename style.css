@@ -220,7 +220,7 @@ h2{
 
 }
 
-#central{
+#central, #central2{
     margin-top: 80px;
     margin-bottom: 50px;
 }
@@ -238,7 +238,7 @@ h2{
     display: block;
 }
 
-.about-near, .about-central{
+.about-near, .about-central, .about-central2{
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
